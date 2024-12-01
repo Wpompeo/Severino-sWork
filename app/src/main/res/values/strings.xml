@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SeverinosWork</string>
+    <string name="rb_one_text">Construção</string>
+    <string name="rb_two_text">Reboco</string>
+    <string name="rb_three_text">Piso</string>
+    <string name="rb_four_text">Pintura</string>
+    <string name="rb_five_text">Conversão</string>
+    <string name="rb_six_text">Elétrica</string>
+</resources>

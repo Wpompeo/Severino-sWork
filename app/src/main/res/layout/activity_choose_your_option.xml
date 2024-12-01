@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseYourOption"
+    android:background="@color/Secondary">
+
+    <LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_bg"
+    android:orientation="vertical"
+    app:layout_constraintStart_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="Selecione sua tarefa"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:flow_wrapMode="chain"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:flow_horizontalGap="16dp"
+        app:flow_verticalGap="8dp"
+        app:flow_horizontalStyle="spread"
+        app:flow_verticalStyle="packed"
+        app:constraint_referenced_ids="rb_one,rb_two,rb_three,rb_four,rb_five,rb_six" />
+
+    <!-- RadioButtons referenciados pelo Flow -->
+    <RadioButton
+        android:id="@+id/rb_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rb_one_text"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_margin="4dp" />
+
+
+    <RadioButton
+        android:id="@+id/rb_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rb_two_text"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_margin="4dp" />
+
+    <RadioButton
+        android:id="@+id/rb_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rb_three_text"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_margin="4dp" />
+
+    <RadioButton
+        android:id="@+id/rb_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rb_four_text"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_margin="4dp" />
+
+    <RadioButton
+        android:id="@+id/rb_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rb_five_text"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_margin="4dp" />
+
+    <RadioButton
+        android:id="@+id/rb_six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rb_six_text"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_margin="4dp" />
+
+
+    <Button
+        android:id="@+id/btn_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:text="Avançar"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flow"
+        app:layout_constraintVertical_bias="0.708" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
