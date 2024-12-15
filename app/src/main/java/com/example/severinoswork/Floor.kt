@@ -56,12 +56,9 @@ class Floor : AppCompatActivity() {
                 val squareMetersFormat = ("%.2f".format(squareMeters))
                 val totalFloorFormat = (" Você vai precisar de %.2f" +
                         "").format(totalFloor) + " unidades de pisos ou $squareMetersFormat m²"
-
                 floorTotal.text = totalFloorFormat
-
             }
         }
-
         btnRecalculateFloor.setOnClickListener {
             val intent = Intent(this, Floor::class.java)
             startActivity(intent)

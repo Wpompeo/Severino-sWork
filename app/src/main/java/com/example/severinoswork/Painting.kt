@@ -1,20 +1,28 @@
 package com.example.severinoswork
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.textfield.TextInputEditText
+
 
 class Painting : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_painting)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+
+        val edtWidthPiece = findViewById<TextInputEditText>(R.id.edt_til_width_of_the_wall_width)
+        val edtLengthPiece = findViewById<TextInputEditText>(R.id.edt_length_wall_piece)
+        val edtLengthWidthPiece = findViewById<TextInputEditText>(R.id.edt_length_wall_width)
+        val edtLengthLengthPiece = findViewById<TextInputEditText>(R.id.edt_length_of_the_wall_length)
+        val edtWidthCeiling = findViewById<TextInputEditText>(R.id.edt_width_wall_ceiling)
+        val edtLengthCeiling = findViewById<TextInputEditText>(R.id.edt_length_wall_width)
+        val btnNextTint = findViewById<Button>(R.id.btn_calculate_tint)
+
+
+
+
     }
 }
