@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
@@ -34,11 +35,10 @@ class Floor : AppCompatActivity() {
 
 
             if (pieceWidthStr == "" || pieceLengthStr == "" || floorWidthStr == "" || floorLengthStr == "") {
-                Snackbar.make(
-                    edtPieceWidth,
-                    "Favor preencher todos os campos!",
-                    Snackbar.LENGTH_LONG
-                ).show()
+                Toast.makeText(
+                    this, "Por favor, selecione uma opção!",
+                    Toast.LENGTH_SHORT).show()
+
             } else {
 
                 val pieceWidth = pieceWidthStr.toFloat()

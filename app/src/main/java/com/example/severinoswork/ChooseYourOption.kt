@@ -42,7 +42,6 @@ class ChooseYourOption : AppCompatActivity() {
                         val intent = Intent(this, Floor::class.java)
                         startActivity(intent)
                     }
-
                     R.id.rb_four -> {
                         val intent = Intent(this, Painting::class.java)
                         startActivity(intent)
@@ -50,7 +49,7 @@ class ChooseYourOption : AppCompatActivity() {
                 }
             } else {
                 // Caso nenhum RadioButton esteja selecionado
-                Toast.makeText(this, "Por favor, selecione uma opção!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Por favor, selecione uma opção!", Toast.LENGTH_LONG).show()
             }
         }
     }
