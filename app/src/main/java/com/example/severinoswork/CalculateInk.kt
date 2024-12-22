@@ -51,13 +51,15 @@ class CalculateInk : AppCompatActivity() {
 
                 val paintYieldCeiling = inkSize / 2
                 val finalWall = resultWallCeiling / paintYieldCeiling
-                val resultFinalFormat = "%.2f Latas de tinta".format(finalWall) + " para pintar $resultWallCeiling m² com duas de mãos. "
+                val resultFinalFormat =
+                    "%.2f Latas de tinta".format(finalWall) + " para pintar $resultWallCeiling m² com duas de mãos. "
                 resultFinal.text = "Você precisará de $resultFinalFormat"
 
             } else {
                 val paintYield = inkSize / 2
                 val finalWall = resultWall / paintYield
-                val resultFinalFormat = "%.2f Latas de tinta".format(finalWall) + " para pintar $resultWall m² com duas de mãos."
+                val resultFinalFormat =
+                    "%.2f Latas de tinta".format(finalWall) + " para pintar $resultWall m² com duas de mãos."
 
                 resultFinal.text = "Você precisará de $resultFinalFormat"
 
