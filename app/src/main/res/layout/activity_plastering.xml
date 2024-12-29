@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Plastering"
+    android:background="@color/Secondary">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_bg"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/plastering_title"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/btn_guide_line_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/tv_espessura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/espessura_media"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <RadioButton
+        android:id="@+id/rb_1_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1.5cm"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_guide_line_center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_espessura" />
+
+    <RadioButton
+        android:id="@+id/rb_2_0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2.0cm"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btn_guide_line_center"
+        app:layout_constraintTop_toBottomOf="@+id/tv_espessura" />
+
+    <TextView
+        android:id="@+id/tv_area_reboco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/text_info_reboco"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rb_1_5" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:hintEnabled="false"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_area_reboco">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_bg"
+            android:hint="Informe a área em m²: ex:100"
+            android:inputType="numberDecimal"
+            android:maxLength="8"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="19sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

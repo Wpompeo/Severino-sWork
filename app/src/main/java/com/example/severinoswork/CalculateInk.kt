@@ -19,7 +19,7 @@ class CalculateInk : AppCompatActivity() {
         binding = ActivityCalculateInkBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var inkSize: Int = 0
+        var inkSize = 0
 
         binding.rbInk09.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {

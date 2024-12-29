@@ -6,6 +6,9 @@
     <string name="rb_four_text">Pintura</string>
     <string name="rb_five_text">Conversão</string>
     <string name="rb_six_text">Elétrica</string>
+    <string name="plastering_title">Calcule a quantidade de cimento para seu reboco:</string>
+    <string name="espessura_media">Espessura média</string>
+    <string name="text_info_reboco">Informe o tamanho da área para reboco em m²</string>
 
     <string-array name="quantityWall">
         <item>1</item>
