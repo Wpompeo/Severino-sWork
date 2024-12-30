@@ -53,7 +53,7 @@
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
@@ -90,7 +90,7 @@
         android:id="@+id/tv_area_reboco"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:text="@string/text_info_reboco"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -102,17 +102,19 @@
         app:layout_constraintTop_toBottomOf="@+id/rb_1_5" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_area_reboco"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:hintEnabled="false"
-        android:layout_marginTop="5dp"
         android:layout_marginStart="12dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="12dp"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_area_reboco">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_area_reboco"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/gradient_bg"
@@ -123,6 +125,63 @@
             android:textColorHint="@color/white"
             android:textSize="19sp" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_result_plastering"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_area_reboco"
+        tools:text="Você vai precisar de " />
+
+    <Button
+        android:id="@+id/btn_recalculate_plastering"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Recalcular"
+        android:textColor="@color/Primary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_guide_line_center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_plastering" />
+
+    <Button
+        android:id="@+id/btn_finish_plastering"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Finalizar"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btn_guide_line_center"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_plastering" />
+
+    <Button
+        android:id="@+id/btn_calc_plastering"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:textSize="17dp"
+        android:textStyle="italic|bold"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_area_reboco" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

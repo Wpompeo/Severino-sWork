@@ -46,6 +46,10 @@ class ChooseYourOption : AppCompatActivity() {
                         val intent = Intent(this, Painting::class.java)
                         startActivity(intent)
                     }
+                    R.id.rb_two -> {
+                        val intent = Intent(this, Plastering::class.java)
+                        startActivity(intent)
+                    }
                 }
             } else {
                 // Caso nenhum RadioButton esteja selecionado

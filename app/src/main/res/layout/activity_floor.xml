@@ -189,10 +189,10 @@
 
     <Button
         android:id="@+id/btn_calculate_floor"
-        android:layout_width="105dp"
+        android:layout_width="185dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/Primary"
-        android:text="OK!"
+        android:text="Calcular"
         android:textSize="17dp"
         android:textStyle="italic|bold"
         app:layout_constraintBottom_toTopOf="@+id/textResult"
