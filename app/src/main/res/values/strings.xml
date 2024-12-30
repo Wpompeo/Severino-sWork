@@ -9,6 +9,28 @@
     <string name="plastering_title">Calcule a quantidade de cimento para seu reboco:</string>
     <string name="espessura_media">Espessura média</string>
     <string name="text_info_reboco">Informe o tamanho da área para reboco em m²</string>
+    <string name="title_floor">Calcule a quantidade de piso necessária:</string>
+    <string name="text_width_piece">Largura da peça: Ex: 2m</string>
+    <string name="text_length_piece">Comprimento da peça: Ex: 2m</string>
+    <string name="text_floor_width">Largura do piso: Ex: 60 cm</string>
+    <string name="text_length_floor">Comprimento do piso: Ex: 60 cm</string>
+    <string name="btn_recalculate_floor">Recalcular</string>
+    <string name="btn_finish_floor">Finalizar</string>
+    <string name="btn_calculate_floor">Calcular</string>
+    <string name="title_ink">Escolha sua tinta:</string>
+    <string name="text_ink_09">0.9ml</string>
+    <string name="text_ink_3_6">3.6L</string>
+    <string name="text_ink_18">18L</string>
+    <string name="text_ink_20">20L</string>
+    <string name="text_type_fink">Qual a lata de tinta que deseja usar:</string>
+    <string name="btn_calculate_ink">Calcular</string>
+    <string name="btn_finish_ink">Finalizar</string>
+    <string name="text_title_main">SEVERINO\'s</string>
+    <string name="text_subtitle_main">Work</string>
+    <string name="text_trhee_title_main">Evite desperdício na sua obra</string>
+    <string name="btn_iniciar_main">Iniciar</string>
+    <string name="btn_avancar_main">Avançar</string>
+    <string name="text_title_your_option">Selecione sua tarefa</string>
 
     <string-array name="quantityWall">
         <item>1</item>

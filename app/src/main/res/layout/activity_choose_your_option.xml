@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="20dp"
-        android:text="Selecione sua tarefa"
+        android:text="@string/text_title_your_option"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="30dp"
@@ -51,22 +51,11 @@
         app:flow_verticalGap="8dp"
         app:flow_horizontalStyle="spread"
         app:flow_verticalStyle="packed"
-        app:constraint_referenced_ids="rb_one,rb_two,rb_three,rb_four,rb_five,rb_six" />
+        app:constraint_referenced_ids="rb_one,rb_two,rb_three" />
 
     <!-- RadioButtons referenciados pelo Flow -->
     <RadioButton
         android:id="@+id/rb_one"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/rb_one_text"
-        android:textColor="@color/white"
-        android:textSize="24dp"
-        android:textStyle="bold"
-        android:layout_margin="4dp" />
-
-
-    <RadioButton
-        android:id="@+id/rb_two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/rb_two_text"
@@ -76,7 +65,7 @@
         android:layout_margin="4dp" />
 
     <RadioButton
-        android:id="@+id/rb_three"
+        android:id="@+id/rb_two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/rb_three_text"
@@ -86,30 +75,10 @@
         android:layout_margin="4dp" />
 
     <RadioButton
-        android:id="@+id/rb_four"
+        android:id="@+id/rb_three"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/rb_four_text"
-        android:textColor="@color/white"
-        android:textSize="24dp"
-        android:textStyle="bold"
-        android:layout_margin="4dp" />
-
-    <RadioButton
-        android:id="@+id/rb_five"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/rb_five_text"
-        android:textColor="@color/white"
-        android:textSize="24dp"
-        android:textStyle="bold"
-        android:layout_margin="4dp" />
-
-    <RadioButton
-        android:id="@+id/rb_six"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/rb_six_text"
         android:textColor="@color/white"
         android:textSize="24dp"
         android:textStyle="bold"
@@ -121,7 +90,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="18dp"
-        android:text="Avançar"
+        android:text="@string/btn_avancar_main"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

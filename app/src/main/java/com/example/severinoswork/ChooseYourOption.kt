@@ -19,18 +19,13 @@ class ChooseYourOption : AppCompatActivity() {
             findViewById(R.id.rb_one),
             findViewById(R.id.rb_two),
             findViewById(R.id.rb_three),
-            findViewById(R.id.rb_four),
-            findViewById(R.id.rb_five),
-            findViewById(R.id.rb_six),
         )
-
         for (radioButton in radioButtons) {
             radioButton.setOnClickListener {
                 // Desmarcar os outros RadioButtons
                 radioButtons.forEach { it.isChecked = it == radioButton }
             }
         }
-
         val btnInit = findViewById<Button>(R.id.btn_task)
         btnInit.setOnClickListener {
 
@@ -38,16 +33,18 @@ class ChooseYourOption : AppCompatActivity() {
 
             if (selectedRadioButton != null) {
                 when (selectedRadioButton.id) {
-                    R.id.rb_three -> {
+                    R.id.rb_one -> {
+                        val intent = Intent(this, Plastering::class.java)
+                        startActivity(intent)
+                    }
+
+                    R.id.rb_two -> {
                         val intent = Intent(this, Floor::class.java)
                         startActivity(intent)
                     }
-                    R.id.rb_four -> {
+
+                    R.id.rb_three -> {
                         val intent = Intent(this, Painting::class.java)
-                        startActivity(intent)
-                    }
-                    R.id.rb_two -> {
-                        val intent = Intent(this, Plastering::class.java)
                         startActivity(intent)
                     }
                 }
