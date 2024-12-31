@@ -27,7 +27,7 @@
             android:text="@string/text_title_main"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="34dp"
+            android:textSize="34sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +43,7 @@
             android:text="@string/text_subtitle_main"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="26dp"
+            android:textSize="26sp"
             android:textStyle="italic|bold" />
 
         <TextView
@@ -52,7 +52,7 @@
             android:text="@string/text_trhee_title_main"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textStyle="italic"/>
 
     </LinearLayout>

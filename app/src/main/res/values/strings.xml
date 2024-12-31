@@ -31,6 +31,7 @@
     <string name="btn_iniciar_main">Iniciar</string>
     <string name="btn_avancar_main">Avançar</string>
     <string name="text_title_your_option">Selecione sua tarefa</string>
+    <string name="btn_calculate_plastering">Calcular</string>
 
     <string-array name="quantityWall">
         <item>1</item>
