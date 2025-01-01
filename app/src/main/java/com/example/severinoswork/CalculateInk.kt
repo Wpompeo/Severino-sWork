@@ -3,6 +3,7 @@ package com.example.severinoswork
 import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.severinoswork.databinding.ActivityCalculateInkBinding
 
@@ -16,6 +17,7 @@ class CalculateInk : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         binding = ActivityCalculateInkBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

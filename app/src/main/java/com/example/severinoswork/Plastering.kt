@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.RadioButton
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
@@ -15,6 +16,7 @@ class Plastering : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_plastering)
 
         val rButton15 = findViewById<RadioButton>(R.id.rb_1_5)
